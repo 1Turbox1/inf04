@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="20dp"
+    android:background="#FFFFFF">
+
+    <!-- Tytuł -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Domek w górach"
+        android:textColor="#808080"
+        android:textSize="35sp"/>
+
+    <!-- Obraz -->
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/obraz" />
+
+    <!-- Przyciski: Polub, Usuń, Zapisz -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#008080"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/like_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#008080"
+            android:text="POLUB"
+            android:textColor="#FFFFFF"
+            android:theme="@style/Theme.AppCompat" />
+
+        <Button
+            android:id="@+id/delete_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#008080"
+            android:text="USUŃ"
+            android:textColor="#FFFFFF"
+            android:theme="@style/Theme.AppCompat" />
+
+        <Button
+            android:id="@+id/save_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#008080"
+            android:text="ZAPISZ"
+            android:textColor="#FFFFFF"
+            android:theme="@style/Theme.AppCompat" />
+    </LinearLayout>
+
+    <!-- Licznik polubień -->
+    <TextView
+        android:id="@+id/likes_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0 polubień"
+        android:textAlignment="viewEnd"
+        android:paddingEnd="16dp"
+         />
+
+    <!-- Linia horyzontalna -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#808080" />
+
+    <!-- Opis -->
+    <TextView
+        android:id="@+id/description_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Opis"
+        android:textStyle="bold"
+         />
+
+    <TextView
+        android:id="@+id/description_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Odwiedź komfortowy domek w Sudetach, blisko do szlaków turystycznych"
+         />
+</LinearLayout>
